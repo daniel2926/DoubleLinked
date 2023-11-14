@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class Queue {
-    LinkedList num = new LinkedList<>();
+    LinkedLis num = new LinkedLis();
 
 
     public boolean offer(Object element){

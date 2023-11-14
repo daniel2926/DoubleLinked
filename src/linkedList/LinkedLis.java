@@ -1,6 +1,7 @@
 package linkedList;
 
 import java.util.ListIterator;
+import java.util.NoSuchElementException;
 
 public class LinkedLis {
     private Node head; // Field pointing to the first node
@@ -138,6 +139,21 @@ public class LinkedLis {
         Node temp = node(index);
         return temp.data;
     }
+    public Object getFirst(){
+        Object getFirst = head;
+        if(getFirst == null){
+            throw new NoSuchElementException();
+        }
+        return getFirst;
+    }
+
+    public Object getLast(){
+        Object getLast = tail;
+        if(getLast  == null)
+            throw new NoSuchElementException();
+        return getLast;
+    }
+
     public ListIterator listIterator() {
 // Creates and returns a ListIterator instance.
         return new ListIterator();
